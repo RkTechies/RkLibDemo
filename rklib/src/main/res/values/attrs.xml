@@ -85,4 +85,75 @@
         <attr name="shape_dot_spacing" format="dimension"/>
     </declare-styleable>
 
+    <!-- Like View -->
+    <declare-styleable name="LikeView">
+        <attr name="dots_primary_color" format="color|reference" />
+        <attr name="dots_secondary_color" format="color|reference" />
+        <attr name="circle_start_color" format="color|reference" />
+        <attr name="circle_end_color" format="color|reference" />
+        <attr name="liked" format="boolean"/>
+        <attr name="anim_scale_factor" format="float"/>
+    </declare-styleable>
+
+    <!-- rating Reviews -->
+    <declare-styleable name="RatingReviews">
+        <attr name="style" format="enum">
+            <enum name="style1" value="1" />
+            <enum name="style2" value="2" />
+        </attr>
+        <attr name="color" format="color" />
+        <attr name="rounded" format="boolean"/>
+        <attr name="gradiant" format="integer" />
+        <attr name="width" format="dimension" />
+        <attr name="text_size" format="dimension" />
+        <attr name="text_color" format="color" />
+        <attr name="spaces" format="dimension" />
+        <attr name="max_value" format="integer" />
+        <attr name="show_label" format="boolean" />
+        <attr name="show_raters" format="boolean" />
+        <attr name="animation" format="boolean" />
+    </declare-styleable>
+
+    <!-- infinite scrollable view pager -->
+    <declare-styleable name="InfiniteViewPager">
+        <attr name="isInfinite" format="boolean" />
+        <attr name="autoScroll" format="boolean" />
+        <attr name="wrap_content" format="boolean" />
+        <attr name="scrollInterval" format="integer"/>
+        <attr name="viewpagerAspectRatio" format="float"/>
+        <attr name="itemAspectRatio" format="float"/>
+    </declare-styleable>
+
+    <!-- Circle pager indicator -->
+    <declare-styleable name="CirclePagerIndicator">
+        <attr name="indicator_spacing" format="dimension"/>
+    </declare-styleable>
+
+    <!-- otp view -->
+    <declare-styleable name="OtpViewTheme">
+        <attr format="reference" name="rkOtpViewStyle"/>
+    </declare-styleable>
+    <declare-styleable name="RkOtpView">
+        <attr format="integer" name="OtpItemCount"/>
+        <attr format="dimension" name="OtpItemWidth"/>
+        <attr format="dimension" name="OtpItemHeight"/>
+        <attr format="dimension" name="OtpItemRadius"/>
+        <attr format="dimension" name="OtpItemSpacing"/>
+        <attr format="dimension" name="OtpLineWidth"/>
+        <attr format="reference|color" name="OtpLineColor"/>
+        <attr format="enum" name="OtpViewType">
+            <enum name="rectangle" value="0"/>
+            <enum name="line" value="1"/>
+            <enum name="none" value="2"/>
+        </attr>
+        <attr name="android:cursorVisible"/>
+        <attr name="android:textAllCaps"/>
+        <attr format="dimension" name="OtpCursorWidth"/>
+        <attr format="reference|color" name="OtpCursorColor"/>
+        <attr name="android:itemBackground"/>
+        <attr format="boolean" name="OtpHideLineWhenFilled"/>
+        <attr format="boolean" name="OtpState_filled"/>
+        <attr format="boolean" name="OtpRtlTextDirection"/>
+        <attr format="string" name="OtpMaskingChar"/>
+    </declare-styleable>
 </resources>
